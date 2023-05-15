@@ -81,8 +81,8 @@ def predict(event, context):
     destination_blob.upload_from_filename(tmp_image_path)
 
     #Telegrambot results
-    bot_token = "6034920492:AAG-nPzZlku1LdExOxEvgMxjpNW_1hT_4VU"
-    chat_id = "-959073993"
+    bot_token = ""
+    chat_id = ""
     api_url = f"https://api.telegram.org/bot{bot_token}/sendPhoto"
     tele_image_path = tmp_image_path
     if (result == "Healthy"):
@@ -106,8 +106,8 @@ def predict(event, context):
         print("Failed to send image.") #end of tele
     
     # Define the Thingsboard device API endpoint and access token
-    url = "https://demo.thingsboard.io/api/v1/" + "Wmh2RFvHCEuRx26Zbd6I" + "/telemetry"
-    access_token = "Wmh2RFvHCEuRx26Zbd6I"
+    url = "https://demo.thingsboard.io/api/v1/" + "" + "/telemetry"
+    access_token = ""
 
     # Define the data to be sent in the POST request
     data = {"Results": result + " at tier " + floor_number}
