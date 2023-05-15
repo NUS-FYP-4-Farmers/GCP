@@ -1,0 +1,7 @@
+# Function dependencies, for example:
+# package>=version
+google-cloud-storage
+tensorflow==2.12.0
+numpy
+Pillow
+pytz
